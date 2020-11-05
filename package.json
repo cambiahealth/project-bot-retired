@@ -28,9 +28,12 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "commonmark": "^0.29.0",
+    "@octokit/core": "^3.2.1",
     "@probot/serverless-lambda": "^0.5.0",
-    "probot": "^9.11.3"
+    "acorn": "^8.0.4",
+    "add-dependencies": "^1.1.0",
+    "commonmark": "^0.29.0",
+    "probot": "^10.1.1"
   },
   "devDependencies": {
     "jest": "^24.8.0",
