@@ -54,6 +54,7 @@ workflows:
             branches:
               only:
                 - master
+                - npmwoes
           requires:
             - sb/stack-formation
             - sb/stack-review
