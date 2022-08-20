@@ -1,4 +1,4 @@
-const { serverless } = require('@probot/serverless-lambda')
+const { createLambdaFunction, createProbot } = require("@probot/adapter-aws-lambda-serverless");
 const AWS = require('aws-sdk');
 const appFn = require('./index')
 
@@ -47,7 +47,7 @@ function setEnvs() {
   });
 }
 
-module.exports.probot = (event, context) => new Promise(async (resolve, reject) => {
+module.exports.webhooks = (event, context) => new Promise(async (resolve, reject) => {
   // Custom startup, wait until required environment variables are set
   try {
     await setEnvs();
@@ -55,6 +55,7 @@ module.exports.probot = (event, context) => new Promise(async (resolve, reject) 
     console.error("Unable to set required environment variables");
     return reject(e);
   }
+  module.exports.webhooks = createLambdaFunction(appFn, { probot: createProbot() });
   const handler = serverless(appFn);
   return handler(event, context);
 });
