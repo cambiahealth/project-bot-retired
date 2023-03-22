@@ -1,9 +1,9 @@
 version: 2.1
 
 orbs:
-  sb: cambiahealth/stack-build@1
+  sb: cambiahealth/stack-build@1.26.103
   node: circleci/node@1.1.4
-  js: cambiahealth/janus-javascript@1
+  js: cambiahealth/janus-javascript@1.0.5
 jobs:
   npm-install:
     executor:
