@@ -3,5 +3,5 @@
   "extends": [
     "local>cambiahealth/renovate-config"
   ],
-  "includeForks": true
+  "forkProcessing": "enabled"
 }
