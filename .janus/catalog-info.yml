@@ -4,18 +4,21 @@ metadata:
   annotations:
     circleci.com/project-slug: github/cambiahealth/project-bot
     github.com/project-slug: cambiahealth/project-bot
-    janus/email-dl: DL-JanusDevOps@Cambiahealth.com
-    janus/slack-channel: platform-infrastructure
-  description: This bot will automatically add new Issues or Pull Requests to a Project
+    janus/email-dl: DL-JanusGaeaTeam@cambiahealth.com
+    janus/slack-channel: team-gaea
+  description: This Github bot will automatically add new Issues or Pull Requests to a Project
     board based on specially formatted Cards in each Column of a Project.
   labels:
     service-tier: '5'
   name: project-bot
+  links:
+    - title: GitHub Project Boards
+      url: https://cambiahealth.atlassian.net/wiki/spaces/~152956317/pages/1649410081/GitHub+Project+Boards
   tags:
   - javascript
   - shell
   - lambda
 spec:
-  lifecycle: prd
-  owner: platform-infrastructure
+  lifecycle: dev
+  owner: gaea
   type: lambda
