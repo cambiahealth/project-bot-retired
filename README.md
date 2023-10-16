@@ -1,5 +1,7 @@
 # cambiahealth/project-bot-retired
 
+## This repo has been archived and is now read-only
+
 [![code coverage][coverage-image]][coverage-url]
 [![travis status][travis-image]][travis-url]
 [![dependency status][dependency-image]][dependency-url]
