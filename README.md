@@ -1,4 +1,4 @@
-# project-bot
+# cambiahealth/project-bot-retired
 
 [![code coverage][coverage-image]][coverage-url]
 [![travis status][travis-image]][travis-url]
